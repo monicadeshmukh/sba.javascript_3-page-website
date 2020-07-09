@@ -12,9 +12,9 @@
   
   <meta name="Monica Deshmukh" content="">
 
-  <link href="./css/style.css" rel="stylesheet">
+  <!--<link href="./css/style.css" rel="stylesheet">
 
-  <script type="text/javascript" src="./js/header-functions.js"></script>
+  <script type="text/javascript" src="./js/header-functions.js"></script>-->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
@@ -27,12 +27,24 @@
 	<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-	<!--<script type="text/javascript" src="./js/header-functions.js"></script>
+	<!--<script type="text/javascript" src="./js/header-functions.js"></script>-->
+		
 
-	<link href="./css/style.css" rel="stylesheet">-->
+	<link href="./css/style.css" rel="stylesheet">
+
+	<script type="text/javascript" src="./js/firstGrade.js"></script>
 	
- 	<title>Elementary Math</title>
+	<style>
+		#result {font-size: medium;
+		font-style: italic;
+		color: white;}
+	</style>
 
+	 <script>
+		 
+	 </script>
+
+	 <title>First Grade Math</title>
 </head> <!-- header ends here -->
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
@@ -54,8 +66,8 @@
 <!-- ---------------------------------------------------------------------------------- -->
 <body> <!-- body begins here -->
 
-  <div class="container"><!--7-->
-      <div class = "row" style = "border: rgb(100, 78, 75); border-width:10px; border-style:solid;"><!--6-->
+	<div class="container"><!--7-->
+      	<div class = "row" style = "border: rgb(100, 78, 75); border-width:10px; border-style:solid;"><!--6-->
         
         <div class= "col-12 col-lg-3  col-md-3 col-sm-6 sticky-top p-2 " style="direction: column; background-color:rgb(158, 4, 4); border-right-color: rgb(100, 78, 75); border-right-width:10px; border-style:solid;"><!--4-->
           
@@ -80,8 +92,8 @@
 				  </div><!--2-->
     			
         <div class="text-center p-2" style=" width: 100%; border-radius: 10px;  margin-top: 40px;"><!--3-->
-          <a class="active linkclass" href="./index.html"><span class="linkclass">Home</span></a><br><br>
-    			<a class="linkclass" href="./firstGrade.html"><span class="linkclass">First Grade</span></a><br><br>
+          <a class="linkclass" href="./index.html"><span class="linkclass">Home</span></a><br><br>
+    			<a class="active linkclass" href="./firstGrade.html"><span class="linkclass">First Grade</span></a><br><br>
 					<a class =  "linkclass" href="./secondGrade.html"><span class="linkclass"> Second Grade </span></a><br><br>
 					<a class =  "linkclass" href="./thirdGrade.html" ><span class="linkclass"> Third Grade </span></a><br><br>
 					<a  class =  "linkclass" href="./fourthGrade.html" ><span class="linkclass"> Fourth Grade </span></a> <br><br> 
@@ -92,21 +104,28 @@
       
         </div><!--4-->
 
-			  <div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(248, 244, 244, 0.993); background: url(https://images.pexels.com/photos/3771074/pexels-photo-3771074.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500https://www.istockphoto.com/photo/physical-and-mathematical-sciences-for-the-engineer-drawing-on-the-chalkboard-gm960851938-262377673?utm_campaign=srp_photos_limitedresults&utm_content=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fmath%2F&utm_medium=affiliate&utm_source=pexels&utm_term=math); background-size: 100%;"><!--5-->
-				<div id="about" class="row p-2 m-3" style="align-self: center;">
-					  <h4 class="headings">BUILD YOUR MATH SKILLS!</h4>
-            <h3 class="headings">SOLVE MATH PRACTICE PROBLEMS 5 MINUTES EACH DAY!</h3>
-            <h2 class="headings">LET'S BEGIN! CHOOSE A CLASSROOM AND SOLVE A 5 MINUTE MATH CHALLENGE!</h2>
+			  <div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(248, 244, 244, 0.993); background: url(https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); background-size: 100%; backdrop-filter: grayscale(0.5) opacity(0.8)"><!--5-->
+				<div class = "m-4" style="align-self: center;">
+					<h4 class="headings">Today's Challenge!</h4>
+					<h3 class="headings"> Count the beads! </h3>
+					<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS18HZssCAwimFco1tIPeulqbpiqDXCuKyngw&usqp=CAU"/></p><br>
+					<form id="problem">
+						<label for="answer">What do you think?</label>
+						<input type="text" id="answer"><br><br>
+						<input type="button" value="Check your answer" onclick="firstGradeProblem()"><br><br>
+					</form>
+					<div><p id = "result" ></p></div>
 				</div>
-        </div><!--5-->
-		  </div><!--6-->
+       		 </div><!--5-->
+		</div><!--6-->
 	</div><!--7-->
 
   <!-- ====================================================== -->
   <!-- ====================================================== -->
   <footer>
     <!-- footer of page begins here -->
-    <script type="text/javascript" src="./js/footer-functions.js"></script>
+	<script type="text/javascript" src="./js/footer-functions.js"></script>
+	<script type="text/javascript" src="./js/firstGrade.js"></script>
   </footer> <!-- footer of page ends here -->
   <!-- ====================================================== -->
   <!-- ====================================================== -->

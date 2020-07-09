@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<head> <!-- header begins here -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="ElementaryMath" content="">
+  
+  <meta name="Monica Deshmukh" content="">
+
+  <link href="./css/style.css" rel="stylesheet">
+
+  <script type="text/javascript" src="./js/header-functions.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+	<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+	<!--<script type="text/javascript" src="./js/header-functions.js"></script>
+
+	<link href="./css/style.css" rel="stylesheet">-->
+	
+ 	<title>Elementary Math</title>
+
+</head> <!-- header ends here -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------------- -->
+<body onload="showAbout();" > <!-- body begins here -->
+
+  <div class="container">
+    	<div class = "row" style = "border: rgb(100, 78, 75); border-width:10px; border-style:solid;">
+    		<div class= "col-12 col-lg-3  col-md-3 col-sm-6 sticky-top p-2 " style="direction: column; background-color:rgb(100, 209, 236); border-right-color: rgb(100, 78, 75); border-right-width:10px; border-style:solid;">
+    			<div class="card text-center" style="padding-bottom:0px; padding-top: 10px;	">
+    				<!--<img class="card-img-top" src="https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?cs=srgb&dl=person-holding-a-chalk-in-front-of-the-chalk-board-714699.jpg&fm=jpg" alt="picture" style="max-width: 100%; max-height: 50%; height: 50%">-->
+    				<div style="align-self: center;"><img class="card-img-top avatar" src="https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?cs=srgb&dl=person-holding-a-chalk-in-front-of-the-chalk-board-714699.jpg&fm=jpg" alt="picture"></div>
+    				<div class="card-body text-center" style="padding-bottom: 0px;">
+    					<h5 class="card-title">Math is Fun!</h5>
+    					<P class="card-text"><strong class="text-muted">Learn it bit by bit!</strong></P>
+    				</div>
+    			</div>
+    			
+    			<div class="m-2 text-left" style="width: 100%;  margin-bottom: 2px;" >
+		    		<address style="text-align: center; font-size: 20px; margin-bottom: 10px; margin-top: 10px;">
+				    <!-- i tag for displaying Font Awesome Icon-->
+						
+							<i class="icon-phone p-2" data-toggle="tooltip" data-placement="bottom" title="757 334 1815"></i><!--</i><span class="iclass">  757 334 1815 </span><br>-->
+							<a href="mailto:monicadeshmukh99@gmail.com"><i class="icon-envelope p-2" style="width: 50px; height: 50px;"></i></a>
+							<!--<i class="icon-github-sign"><span class="iclass">  github.com/monicadeshmukh</span></i><br>-->
+							<a href="http://github.com/monicadeshmukh"><i class="icon-github-sign p-2"></i></a>
+							<!--<i class="icon-linkedin-sign"><span class="iclass">  www.linkedin.com/in/monica-deshmukh</span></i>-->
+							<a href="http://www.linkedin.com/in/monica-deshmukh"><i class="icon-linkedin-sign p-2"></i></a>
+						
+				        
+				    </address>
+				</div>
+    			
+    			<div class="text-center p-2" style=" width: 100%; border-radius: 10px;  margin-top: 40px;">
+    				<a class="active linkclass" href="#about" onclick ="showAbout();"><span class="linkclass"> About</span></a><br><br>
+					<a class =  "linkclass" href="#training" onclick ="showTraining();"><span class="linkclass"> Training </span></a><br><br>
+					<a class =  "linkclass" href="#experience" onclick ="showExperience();"><span class="linkclass"> Experience </span></a><br><br>
+					<a  class =  "linkclass" href="#education" onclick ="showEducation();"><span class="linkclass"> Education </span></a> <br><br> 
+					<a class =  "linkclass" href="#certifications"><span class="linkclass"> Certifications </span></a><br><br>
+    			</div>
+    			
+			</div>
+
+			<!--<div class = "col-12 col-lg-9 col-md-9 col-sm-6 bg-light" style="display: flex; flex-direction: column;">-->
+	<!-----><div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(248, 244, 244, 0.993);">
+				<div id="about" class="row p-2">
+					<h3  class="linkclass m-2 p-2">CAREER PROFILE</h3>
+					  <p id="details" class="text-justify description m-2 p-2">Highly motivated Java / Full Stack engineer with over four years of experience working as a software developer /Analyst.<br> Master's degree in Information Technology. </p>
+				</div>
+
+				<div id="skills" class="row p-2">
+					<h3 class="linkclass m-2 p-2">Skills</h3><br>
+					 <ul class="list-unstyled">
+						    <li><strong>Languages: </strong> Java, Javascript, c#, Python</li>
+						    <li><strong>IDE: </strong> Eclipse, Visual Studio, Dreamweaver, Android Studio</li>
+						    <li><strong>Tools:  </strong> Sandbox, Sublime, Codepen, Notepad++</li>
+						    <li><strong>RDBMS:  </strong> Oracle, MS SQL Server</li>
+						    <li><strong>Framesworks:  </strong> Bootstrap 4</li>
+						    <li><strong>Methodologies:  </strong> Agile Scrum</li>
+						    <li><strong>Web hosting Services:  </strong> Github, Bitbucket</li>
+					 </ul>
+				</div>
+
+				<div id="training" class="row p-2" style="width: 100%;" >
+					<p class="linkclass m-2 p-2">TRAINING</p> <br><br>
+					<div class = "m-2 p-2" style="width: 100%;">
+					    <div class = "titles" style="display: inline-block;"> Full Stack Java Developer bootcamp PerScholas.org</div>
+					    <div class = "titles text-muted float-right" style="font-size: 14px;"> June 2020 - Present </div><br>
+					    <p class="description text-justify">Currently doing a rigorous hands on project based training in Java Full Stack Devlopment. Developing a banking web application. </p>
+					</div>
+
+					<div class = "m-2 p-2" style="width: 100%;">
+					    <div class = "titles" style="display: inline-block;">Full-Stack Web Development specialization Coursera.org</div>
+					    <div class = "titles text-muted float-right" style="font-size: 14px; "> <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp--> March 2020 - Present </div>
+					    <p class="description text-justify">Developing a restaurant website as part of the four-course specialization.<br> 
+					    <span style="font-style:italic;">Environment: </span> bitbucket, git, Bootstrap4, HTML, CSS, JavaScript, Sublime Text Editor</p>
+					</div>
+
+					<div class = "m-2 p-2" style="width: 100%;">
+					    <div class = "titles" style="display: inline-block;">Three course specialization in Java Programming Language Coursera.org</div>
+					    <div class = "titles text-muted float-right" style="font-size: 14px;"> Jan 2016 - May 2016 </div><br>
+					    <p class="description text-justify">Developed three projects.</p>
+					    <ul class="list-unstyled">
+					    	<li><strong>Display Earthquake data on world map. </strong>
+					    		<ul>
+					    			<li>Made the map interactive. Added icons to display information like location and population when hovered over them.</li>
+					    			<li>Added function key to the map. </li>
+					    			<li>Displayed the most current earthquake data on the map. </li>
+					    		</ul>
+					    	</li>
+
+					    	<li><strong>GPS Navigation System  </strong>
+					    		<ul>
+					    			<li>Java program finds driving directions between start and end points.</li>
+					    			<li>Used different search Algorithms like BFS, Dijkstra and A*.  </li>
+					    		</ul>
+					    	</li>
+
+					    	<li><strong>Text Editor Program  </strong>
+					    		<ul>
+					    			<li>Auto generated smart text when user is typing words.</li>
+					    			<li>Autocomplete the text and did spell check.</li>
+					    		</ul>
+					    	</li>
+					    </ul>
+					    <p><span style="font-style:italic;">Environment: </span> Java 7, Eclipse</p>
+					</div>
+
+					<div class = "m-2 p-2"  style="width: 100%;">
+					    <div class = "titles" style="display: inline-block;">Programming Mobile Applications for Android Handheld Systems Coursera.org</div><!--&nbsp&nbsp-->
+					    <div class = "titles text-muted float-right" style="font-size: 14px;"> Sept 2015 – Dec 2015 </div><br><br>
+					    	<ul class="list-unstyled">
+					    		<li><strong>Developed Daily Selfie app. </strong>
+					    			<ul>
+					    				<li>Used smartphone camera simulator to take selfie pictures.</li>
+					    				<li>Program saves pictures and gives reminder notifications on smartphone.</li>
+					    			</ul>
+					    		</li>
+
+					    		<li><strong>Soap bubbles app.</strong>
+					    			<ul>
+					    				<li>Used smartphone camera simulator to take selfie pictures.</li>
+					    				<li>Program saves pictures and gives reminder notifications on smartphone.</li>
+					    			</ul>
+					    		</li>
+					    	</ul>
+					    	<p><span class = "text-muted" style="font-style:italic;">Environment: </span> Android Studio, Smartphone simulator	</p>
+						</div>
+ 					</div>
+ 				<!--</div>-->
+
+ 				<div id="experience" class="row row-content">
+					<p class="linkclass m-2 p-2">EXPERIENCE</p> <br><br>
+					<div class = "m-2 p-2">
+					    <div class = "titles" style="display: inline-block;">Programmer Analyst</div>
+					    <div class = "titles text-muted float-right" style="font-size: 14px;"> 1994 - 1999 </div>
+					    <div class = "titles" >ICIL (Zensar Technologies)Pune, India </div>
+					    <ul class="list-unstyled">
+					    	<li><strong>Technical Consultant </strong><br>Fujitsu Singapore Pvt. Ltd., Singapore.
+					    		<ul>
+					    			<li>Trained a team of 7 people on Oracle basics, PL/SQL and Forms 4.5, Reports 2.5. </li>
+					    			<li>Prepared training material and coursework specific to the customer’s needs to prepare the team for development of project for the Takashimaya chain of shops in Singapore.  </li>
+					    			<li>Verifying implementation of various standards such as coding standards and GUI standards as per	 customer specification as well as documentation as per ISO 9000 standard.</li>
+					    			<li>Completed the bug fixing, modification and testing job onsite in Osaka, Japan.</li>
+					    			<li>Earned A grade in the project evaluation with a salary raise and upgrade in job title as Systems Analyst.</li>
+					    		</ul>
+					    	</li>
+
+					    	<li><strong>Module leader and developer </strong><br>Production Management System, Matsushita Electric Works, Osaka, Japan.   
+					    		<ul>
+					    			<li>Guided a team of 4 people, provided technical support to team members.</li>
+					    			<li>Unit testing of programs developed by the team members. </li>
+					    		</ul>
+					    	</li>
+
+					    	<li><strong>Senior Software Engineer</strong><br>Satyam Computer Systems Limited, India	</strong>
+					    		<ul>
+					    			<li>Worked as a module leader on a web based application for the client Fiserv, Inc, USA.</li>
+					    			<li> Project was in initiation phase.  Completed training in JDK1.1.5 and CBT for CORBA.</li>
+					    		</ul>
+					    	</li>
+					    </ul>
+					</div>
+				</div>
+
+				<div id="education" class="row row-content">
+					<div class="linkclass m-2 p-2" style="width: 100%">EDUCATION</div> <br><br>
+					<div class = "m-2 p-2">
+					    <div class = "titles" style="display: inline-block;">M.S. Information Technology, University of Texas Pan American
+					    </div>
+					    <div class = "titles text-muted float-right" style="font-size: 14px; "> July 2006 - July 2008 </div>
+					    <p class="description text-justify">GPA: 4.0, Rank: 1st among 183 students of all Engineering branches at UTPA. </p>
+					<!--<div class = "m-2 p-2">
+					    <div class = "titles" style="display: inline-block;">M.S. Information Technology, University of Texas Pan American</div>
+					    <div class = "titles text-muted float-right" style="font-size: 14px;"> July 2006 - July 2008 </div><br>
+					    <p class="description text-justify">GPA: 4.0, Rank: 1st among 183 students of all Engineering branches at UTPA. </p>
+					</div>-->
+					</div>
+				</div>
+	<!-----></div>
+		</div>
+	</div>
+
+  <!-- ====================================================== -->
+  <!-- ====================================================== -->
+  <footer>
+    <!-- footer of page begins here -->
+    <script type="text/javascript" src="./js/footer-functions.js"></script>
+  </footer> <!-- footer of page ends here -->
+  <!-- ====================================================== -->
+  <!-- ====================================================== -->
+
+</body>
+
+<!-- ---------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------------- -->
+<!-- ---------------------------------------------------------------------------------- -->
+
+</html>
