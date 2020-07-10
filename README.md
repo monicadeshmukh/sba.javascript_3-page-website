@@ -10,7 +10,7 @@ https://github.com/monicadeshmukh/sba.javascript_3-page-website/blob/master/img/
 
 https://github.com/monicadeshmukh/sba.javascript_3-page-website/blob/master/img/firstGradePage.jpg
 
-
+https://github.com/monicadeshmukh/sba.javascript_3-page-website/blob/master/img/secondGrade.jpg
 
 
 # AD - SBA - HTML/CSS/JavaScript
