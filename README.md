@@ -6,7 +6,7 @@ Tech Stack: Bootstrap4, Html, CSS, JavaScript, jQuery
 
 https://monicadeshmukh.github.io/sba.javascript_3-page-website/.
 
-
+https://github.com/monicadeshmukh/sba.javascript_3-page-website/blob/master/img/indexPage.jpg
 
 
 
