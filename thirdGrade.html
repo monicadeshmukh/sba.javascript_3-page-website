@@ -12,27 +12,68 @@
   
   <meta name="Monica Deshmukh" content="">
 
-  <link href="./css/style.css" rel="stylesheet">
-
-  <script type="text/javascript" src="./js/header-functions.js"></script>
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
 	<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-	<!--<script type="text/javascript" src="./js/header-functions.js"></script>
+	<!--<script type="text/javascript" src="./js/header-functions.js"></script>-->
 
-	<link href="./css/style.css" rel="stylesheet">-->
-	
- 	<title>Elementary Math</title>
+	<!-- needed for the dropdown menu-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+	<link href="./css/style.css" rel="stylesheet">
+
+	<style>
+		#result {font-size: medium;
+		font-style: italic;
+		color: white;}
+
+		#number1, #number2, #answer {
+			width: 100px;
+			height: 30px;
+		}
+		table{
+			width: 500px;
+			height: 300px;
+			text-align: center;
+			border: 5px solid rgb(11, 29, 11);
+			font-size: medium;
+			font-weight: bold;
+		}
+		th, td{
+			border: 1px solid rgb(231, 207, 207);
+		}
+
+		td{width: 10px;}
+
+		td:hover{
+			background-color: rgb(139, 9, 9);
+			color: white;
+		}
+		.hgt {height: 10px;}
+		
+		input {
+			width:50px;
+			height:20px;
+		}
+
+		.operation {background-color: rgb(105, 101, 101);
+			font-size: x-large;
+		color:white;
+		pointer-events: none;
+		}
+
+		.noHover {pointer-events: none;}
+	</style>
+
+	<title>Third Grade Math</title>
 </head> <!-- header ends here -->
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
@@ -54,21 +95,24 @@
 <!-- ---------------------------------------------------------------------------------- -->
 <body> <!-- body begins here -->
 
-  <div class="container"><!--7-->
-      <div class = "row" style = "border: rgb(100, 78, 75); border-width:10px; border-style:solid;"><!--6-->
+	<div class="container"><!--7-->
+
+      	<div class = "row" style = "border: rgb(100, 78, 75); border-width:10px; border-style:solid;"><!--6-->
         
-        <div class= "col-12 col-lg-3  col-md-3 col-sm-6 sticky-top p-2 " style="direction: column; background-color:rgb(158, 4, 4); border-right-color: rgb(100, 78, 75); border-right-width:10px; border-style:solid;"><!--4-->
+        	<div class= "col-12 col-lg-3  col-md-3 col-sm-6 sticky-top p-2 " style="direction: column; background-color:rgb(158, 4, 4); border-right-color: rgb(100, 78, 75); border-right-width:10px; border-style:solid;"><!--4-->
           
-          <div class="card text-center" style="padding-bottom:0px; padding-top: 10px;	"><!--1-->
-    				<div style="align-self: center;"><img class="card-img-top avatar" src="https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?cs=srgb&dl=person-holding-a-chalk-in-front-of-the-chalk-board-714699.jpg&fm=jpg" alt="picture"></div>
-            <div class="card-body text-center" style="padding-bottom: 0px;">
+          		<div class="card text-center" style="padding-bottom:0px; padding-top: 10px;	"><!--1-->
+					<div style="align-self: center;">
+						<img class="card-img-top avatar" src="https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?cs=srgb&dl=person-holding-a-chalk-in-front-of-the-chalk-board-714699.jpg&fm=jpg" alt="picture">
+					</div>
+            		<div class="card-body text-center" style="padding-bottom: 0px;">
     					<h5 class="card-title">Math is Fun!</h5>
-    					<P class="card-text"><strong class="text-muted">Practice it each day!</strong></P>
+    					<P class="card-text"><strong class="text-muted">Practice math Every day!</strong></P>
     				</div>
     			</div><!--1-->
     			
-    			<div class="m-2 text-left" style="width: 100%;  margin-bottom: 2px;" ><!--1-->
-            <address style="text-align: center; font-size: 20px; margin-bottom: 10px; margin-top: 10px;">  
+    			<div class="m-2 text-left" style="width: 100%;  margin-bottom: 2px;" ><!--2-->
+           			<address style="text-align: center; font-size: 20px; margin-bottom: 10px; margin-top: 10px;">  
 				    <!-- i tag for displaying Font Awesome Icon-->
 							<i class="icon-phone p-2" data-toggle="tooltip" data-placement="bottom" title="757 334 1815"></i><!--</i><span class="iclass">  757 334 1815 </span><br>-->
 							<a href="mailto:monicadeshmukh99@gmail.com"><i class="icon-envelope p-2" style="width: 50px; height: 50px;"></i></a>
@@ -77,36 +121,120 @@
 							<!--<i class="icon-linkedin-sign"><span class="iclass">  www.linkedin.com/in/monica-deshmukh</span></i>-->
 							<a href="http://www.linkedin.com/in/monica-deshmukh"><i class="icon-linkedin-sign p-2"></i></a>
 				    </address>
-				  </div><!--2-->
+				</div><!--2-->
     			
-        <div class="text-center p-2" style=" width: 100%; border-radius: 10px;  margin-top: 40px;"><!--3-->
-          <a class="active linkclass" href="./index.html"><span class="linkclass">Home</span></a><br><br>
-    			<a class="linkclass" href="./firstGrade.html"><span class="linkclass">First Grade</span></a><br><br>
+        		<div class="text-center p-2" style=" width: 100%; border-radius: 10px;  margin-top: 40px;"><!--3-->
+         			<a class="linkclass" href="./index.html"><span class="linkclass">Home</span></a><br><br>
+    				<a class="linkclass" href="./firstGrade.html"><span class="linkclass">First Grade</span></a><br><br>
 					<a class =  "linkclass" href="./secondGrade.html"><span class="linkclass"> Second Grade </span></a><br><br>
-					<a class =  "linkclass" href="./thirdGrade.html" ><span class="linkclass"> Third Grade </span></a><br><br>
-					<a  class =  "linkclass" href="./fourthGrade.html" ><span class="linkclass"> Fourth Grade </span></a> <br><br> 
-					<a class =  "linkclass" href="./fifthGrade.html"><span class="linkclass"> Fifth Grade </span></a><br><br>
-    		</div><!--3-->
-    			
-      
-      
-        </div><!--4-->
+					<a class =  "active linkclass" href="./thirdGrade.html" ><span class="linkclass"> Third Grade </span></a><br><br>
+					<!--<a  class =  "linkclass" href="./fourthGrade.html" ><span class="linkclass"> Fourth Grade </span></a> <br><br> 
+					<a class =  "linkclass" href="./fifthGrade.html"><span class="linkclass"> Fifth Grade </span></a><br><br>-->
+				</div><!--3-->
+			      
+			</div><!--4-->
+			
+			<div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(104, 131, 84, 0.993);"><!--5-->
+			<!--<div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(248, 244, 244, 0.993); background: url(https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); background-size: 100%; backdrop-filter: grayscale(0.5) opacity(0.8)">--><!--5-->
+				<div class = "float-right"><!--9-->
+					<div class="dropdown float-right"><!--10-->
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style = "color: rgb(92, 87, 87);">Contact Us</button>
+						<ul class="dropdown-menu float-right">
+						<li><a href="#">Phone: 757 334 1815</i></a></li>
+						<li><a href="mailto:monicadeshmukh99@gmail.com">Email</a></li>
+						<li><a href="http://www.linkedin.com/in/monica-deshmukh">LinkedIn</a></li>
+						</ul>
+					</div><!--10-->
+				</div><!--9-->
 
-			  <div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(248, 244, 244, 0.993); background: url(https://images.pexels.com/photos/3771074/pexels-photo-3771074.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500https://www.istockphoto.com/photo/physical-and-mathematical-sciences-for-the-engineer-drawing-on-the-chalkboard-gm960851938-262377673?utm_campaign=srp_photos_limitedresults&utm_content=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fmath%2F&utm_medium=affiliate&utm_source=pexels&utm_term=math); background-size: 100%;"><!--5-->
-				<div id="about" class="row p-2 m-3" style="align-self: center;">
-					  <h4 class="headings">BUILD YOUR MATH SKILLS!</h4>
-            <h3 class="headings">SOLVE MATH PRACTICE PROBLEMS 5 MINUTES EACH DAY!</h3>
-            <h2 class="headings">LET'S BEGIN! CHOOSE A CLASSROOM AND SOLVE A 5 MINUTE MATH CHALLENGE!</h2>
-				</div>
-        </div><!--5-->
-		  </div><!--6-->
+				<div class = "m-4" style="align-self: center;"><!--11-->
+					<h4 class="headings">Today's Challenge!</h4>
+					<h3 class="headings"> Let's solve a math grid! </h3><br><br>
+					<table id="mathTable">
+						<tr class="hgt">
+							<th colspan="4" class = "noHover" style="text-align: center;"><strong>Solve the following</strong></th>
+							<th>Answer</th>
+						</tr>
+						<tr>
+							<td><input type="text" id = "additionNum1"></td>
+							<td class="operation">+</td>
+							<td><input type="text" id = "additionNum2"></td>
+							<td><input type="text" id = "additionResult"></td>
+							<td class = "noHover"><p id="additionAnswer"></p></td>
+						</tr>
+						<tr>
+							<td><input type="text" id = "subtractionNum1"></td>
+							<td class="operation">-</td>
+							<td><input type="text" id = "subtractionNum2"></td>
+							<td><input type="text" id = "subtractionResult"></td>
+							<td class = "noHover"><p id="subtractionAnswer"></p></td>
+						</tr>
+						<tr>
+							<td><input type="text" id = "multiplicationNum1"></td>
+							<td class="operation">*</td>
+							<td><input type="text" id = "multiplicationNum2"></td>
+							<td><input type="text" id = "multiplicationResult"></td>
+							<td class = "noHover"><p id="multiplicationAnswer"></p></td>
+						</tr>
+						<tr>
+							<td><input type="text" id = "divisionNum1"></td>
+							<td class="operation">/</td>
+							<td><input type="text" id = "divisionNum2"></td>
+							<td><input type="text" id = "divisionResult"></td>
+							<td class = "noHover"><p id="divisionAnswer"></p></td>
+						</tr>
+					</table><br><br>
+
+					<div>
+						<input type="button" value="Check your answer"  onclick="thirdGradeProblem()">
+						<input type="button" value="Try again" onclick="clearTable()">
+					</div><br>
+					
+					<div id="displayResult"  align-items="center">
+						<p id = "result" ></p><br>
+						<img id = "hifi" src="./img/hifi3.gif" style="width: 100px; height:100px; display:none;">
+					</div>
+				</div><!--11-->
+       		</div><!--5-->
+		</div><!--6-->
 	</div><!--7-->
 
   <!-- ====================================================== -->
   <!-- ====================================================== -->
   <footer>
     <!-- footer of page begins here -->
-    <script type="text/javascript" src="./js/footer-functions.js"></script>
+	<!--<script type="text/javascript" src="./js/footer-functions.js"></script>-->
+	<script type="text/javascript" src="./js/thirdGrade.js"></script>
+	<script>
+		function clearTable(){
+			location.reload();
+		}
+
+		window.onload = function() { 
+			//var cnt = document.getElementById("beadBox").childElementCount;
+			var num1 = parseInt((Math.random() * 10));
+			var num2 = parseInt((Math.random() * 100));
+			var num3 = parseInt((Math.random() * 100));
+			var num4 = parseInt((Math.random() * 10));
+			var num5 = parseInt((Math.random() * 10));
+			var num6 = parseInt((Math.random() * 10));
+			var num7 = parseInt((Math.random() * 100));
+			var num8 = parseInt((Math.random() * 10));
+			
+			console.log(num1);
+			document.getElementById("additionNum1").value = num1;
+			document.getElementById("additionNum2").value = num2;
+			document.getElementById("subtractionNum1").value = num3;
+			document.getElementById("subtractionNum2").value = num4;
+			document.getElementById("multiplicationNum1").value = num5;
+			document.getElementById("multiplicationNum2").value = num6;
+			document.getElementById("divisionNum1").value = num7;
+			document.getElementById("divisionNum2").value = num8;
+			document.getElementById("additionNum1").focus(); 
+        } 
+
+	
+	</script>
   </footer> <!-- footer of page ends here -->
   <!-- ====================================================== -->
   <!-- ====================================================== -->

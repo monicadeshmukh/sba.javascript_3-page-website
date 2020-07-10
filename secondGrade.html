@@ -20,7 +20,7 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>-->
 
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
@@ -28,20 +28,27 @@
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 	<!--<script type="text/javascript" src="./js/header-functions.js"></script>-->
-		
+
+	<!-- needed for the dropdown menu-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 	<link href="./css/style.css" rel="stylesheet">
 
-	<script type="text/javascript" src="./js/firstGrade.js"></script>
-	
 	<style>
 		#result {font-size: medium;
 		font-style: italic;
 		color: white;}
+
+		#number1, #number2, #answer {
+			width: 100px;
+			height: 30px;
+		}
 	</style>
 
 	 <script>
-		 
+		
 	 </script>
 
 	 <title>Second Grade Math</title>
@@ -96,33 +103,43 @@
     			<a class="linkclass" href="./firstGrade.html"><span class="linkclass">First Grade</span></a><br><br>
 					<a class =  "active linkclass" href="./secondGrade.html"><span class="linkclass"> Second Grade </span></a><br><br>
 					<a class =  "linkclass" href="./thirdGrade.html" ><span class="linkclass"> Third Grade </span></a><br><br>
-					<a  class =  "linkclass" href="./fourthGrade.html" ><span class="linkclass"> Fourth Grade </span></a> <br><br> 
-					<a class =  "linkclass" href="./fifthGrade.html"><span class="linkclass"> Fifth Grade </span></a><br><br>
-    		</div><!--3-->
-    			
-      
-      
+					<!--<a  class =  "linkclass" href="./fourthGrade.html" ><span class="linkclass"> Fourth Grade </span></a> <br><br> 
+					<a class =  "linkclass" href="./fifthGrade.html"><span class="linkclass"> Fifth Grade </span></a><br><br>-->
+			</div><!--3-->
+			      
         </div><!--4-->
+		<div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(104, 131, 84, 0.993);"><!--5-->
+		<!--<div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(248, 244, 244, 0.993); background: url(https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); background-size: 100%; backdrop-filter: grayscale(0.5) opacity(0.8)">--><!--5-->
+			<div class = "float-right">
+				<div class="dropdown float-right">
+					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style = "color: rgb(92, 87, 87);">Contact Us</button>
+					<ul class="dropdown-menu float-right">
+					<li><a href="#">Phone: 757 334 1815</i></a></li>
+					<li><a href="mailto:monicadeshmukh99@gmail.com">Email</a></li>
+					<li><a href="http://www.linkedin.com/in/monica-deshmukh">LinkedIn</a></li>
+					</ul>
+				</div>
+			</div>
 
-		<div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(248, 244, 244, 0.993); background: url(https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); background-size: 100%; backdrop-filter: grayscale(0.5) opacity(0.8)"><!--5-->
 				<div class = "m-4" style="align-self: center;">
 					<h4 class="headings">Today's Challenge!</h4>
 					<h3 class="headings"> Can you add these numbers? </h3><br><br>
-					<form id = "secondGradeProblem" style="align-content: center;">
-						<div>
-							<label for="number1">Choose number1</label>
-							<input type="number" id="number1" autocomplete="off" onfocus="this.value=''">
-							<label for="number2">Choose number2</label>
-							<input type="number" id="number2" autocomplete="off" onfocus="this.value=''">
-						</div><br><br>
-						<div>
-							<p class="headings"> Add them now. </p>
-							<input type="text" id = "answer" autocomplete="off" onfocus="this.value=''">
-							<input type="button" value="Check your answer" onclick="secondGradeProblem()"><br><br>
-						</div>
-						
-					</form>
-					<div><p id = "result" ></p></div>
+					<form id="problem">
+						<label for="number1">Enter Number 1</label>
+						<input type="text" id="number1" name="number1"><br>
+						<p style="font-weight: bolder; height: 10px;">+</p>
+						<label for="number2">Enter Number 2</label>
+						<input type="text" id="number2" name="number2"><br><br>
+						<p style="font-weight: bolder; height: 10px;">=</p>
+						<label for="answer">Add the numbers</label>
+						<input type="text" id="answer" name="answer"><br><br>
+						<input type="button" value="Check your answer" onclick="secondGradeProblem()">
+						<input type="button" value="Try again" onclick="location.reload();">
+					</form><br>
+					<div id="displayResult"  align-items="center">
+						<p id = "result" ></p>
+						<img id = "hifi" src="./img/hifi.gif" style="width: 100px; height:100px; display:none;">
+					</div>
 				</div>
        		 </div><!--5-->
 		</div><!--6-->
@@ -133,7 +150,40 @@
   <footer>
     <!-- footer of page begins here -->
 	<script type="text/javascript" src="./js/footer-functions.js"></script>
-	<script type="text/javascript" src="./js/secondGrade.js"></script>
+	<script>
+		function secondGradeProblem() {
+        var ans, text;
+		var num1 = document.getElementById("number1").value;
+		console.log(num1);
+        var num2 = document.getElementById("number2").value;
+        ans= Number(num1) + Number(num2);
+        var userAnswer = document.getElementById("answer").value;
+        //console.log(userAnswer);
+        //debugger
+    	if (ans == userAnswer){
+			text = "You are right! ";
+			document.getElementById("hifi").style.display = "inline";
+		}
+        else {
+			text = "Hmm! Try Again."
+			document.getElementById("hifi").style.display = "none";
+		}
+		document.getElementById("result").innerHTML = text;
+		//debugger
+        // document.getElementById("secondGradeProblem").reset();
+	  }
+
+		window.onload = function() { 
+			//var cnt = document.getElementById("beadBox").childElementCount;
+			var num1 = parseInt((Math.random() * 10));
+			var num2 = parseInt((Math.random() * 100));
+			console.log(num1);
+			document.getElementById("number1").value = num1;
+			document.getElementById("number2").value = num2;
+			document.getElementById("answer").focus(); 
+        } 
+
+	</script>
   </footer> <!-- footer of page ends here -->
   <!-- ====================================================== -->
   <!-- ====================================================== -->

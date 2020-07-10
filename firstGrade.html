@@ -12,10 +12,6 @@
   
   <meta name="Monica Deshmukh" content="">
 
-  <!--<link href="./css/style.css" rel="stylesheet">
-
-  <script type="text/javascript" src="./js/header-functions.js"></script>-->
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -27,22 +23,25 @@
 	<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-	<!--<script type="text/javascript" src="./js/header-functions.js"></script>-->
-		
+	<!-- needed for the dropdown menu-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 	<link href="./css/style.css" rel="stylesheet">
 
-	<script type="text/javascript" src="./js/firstGrade.js"></script>
-	
 	<style>
 		#result {font-size: medium;
 		font-style: italic;
-		color: white;}
-	</style>
+		color: white;
+		}
 
-	 <script>
-		 
-	 </script>
+		.bead {width:50px;
+			height:50px;
+			border-radius:50%;
+			background-color: red;
+			display:inline-block;}
+	</style>
 
 	 <title>First Grade Math</title>
 </head> <!-- header ends here -->
@@ -69,54 +68,71 @@
 	<div class="container"><!--7-->
       	<div class = "row" style = "border: rgb(100, 78, 75); border-width:10px; border-style:solid;"><!--6-->
         
-        <div class= "col-12 col-lg-3  col-md-3 col-sm-6 sticky-top p-2 " style="direction: column; background-color:rgb(158, 4, 4); border-right-color: rgb(100, 78, 75); border-right-width:10px; border-style:solid;"><!--4-->
+        	<div class= "col-12 col-lg-3  col-md-3 col-sm-6 sticky-top p-2 " style="direction: column; background-color:rgb(158, 4, 4); border-right-color: rgb(100, 78, 75); border-right-width:10px; border-style:solid;"><!--4-->
           
-          <div class="card text-center" style="padding-bottom:0px; padding-top: 10px;	"><!--1-->
-    				<div style="align-self: center;"><img class="card-img-top avatar" src="https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?cs=srgb&dl=person-holding-a-chalk-in-front-of-the-chalk-board-714699.jpg&fm=jpg" alt="picture"></div>
-            <div class="card-body text-center" style="padding-bottom: 0px;">
+          		<div class="card text-center" style="padding-bottom:0px; padding-top: 10px;	"><!--1-->
+					<div style="align-self: center;">
+						<img class="card-img-top avatar" src="https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?cs=srgb&dl=person-holding-a-chalk-in-front-of-the-chalk-board-714699.jpg&fm=jpg" alt="picture">
+					</div>
+            		<div class="card-body text-center" style="padding-bottom: 0px;">
     					<h5 class="card-title">Math is Fun!</h5>
-    					<P class="card-text"><strong class="text-muted">Practice it each day!</strong></P>
+    					<P class="card-text"><strong class="text-muted">Practice Math Every day!</strong></P>
     				</div>
     			</div><!--1-->
     			
-    			<div class="m-2 text-left" style="width: 100%;  margin-bottom: 2px;" ><!--1-->
-            <address style="text-align: center; font-size: 20px; margin-bottom: 10px; margin-top: 10px;">  
-				    <!-- i tag for displaying Font Awesome Icon-->
-							<i class="icon-phone p-2" data-toggle="tooltip" data-placement="bottom" title="757 334 1815"></i><!--</i><span class="iclass">  757 334 1815 </span><br>-->
-							<a href="mailto:monicadeshmukh99@gmail.com"><i class="icon-envelope p-2" style="width: 50px; height: 50px;"></i></a>
-							<!--<i class="icon-github-sign"><span class="iclass">  github.com/monicadeshmukh</span></i><br>-->
-							<a href="http://github.com/monica-deshmukh"><i class="icon-github-sign p-2"></i></a>
-							<!--<i class="icon-linkedin-sign"><span class="iclass">  www.linkedin.com/in/monica-deshmukh</span></i>-->
-							<a href="http://www.linkedin.com/in/monica-deshmukh"><i class="icon-linkedin-sign p-2"></i></a>
+    			<div class="m-2 text-left" style="width: 100%;  margin-bottom: 2px;" ><!--2-->
+            		<address style="text-align: center; font-size: 20px; margin-bottom: 10px; margin-top: 10px;">  
+				    	<!-- i tag for displaying Font Awesome Icon-->
+						<i class="icon-phone p-2" data-toggle="tooltip" data-placement="bottom" title="757 334 1815"></i><!--</i><span class="iclass">  757 334 1815 </span><br>-->
+						<a href="mailto:monicadeshmukh99@gmail.com"><i class="icon-envelope p-2" style="width: 50px; height: 50px;"></i></a>
+						<!--<i class="icon-github-sign"><span class="iclass">  github.com/monicadeshmukh</span></i><br>-->
+						<a href="http://github.com/monica-deshmukh"><i class="icon-github-sign p-2"></i></a>
+						<!--<i class="icon-linkedin-sign"><span class="iclass">  www.linkedin.com/in/monica-deshmukh</span></i>-->
+						<a href="http://www.linkedin.com/in/monica-deshmukh"><i class="icon-linkedin-sign p-2"></i></a>
 				    </address>
-				  </div><!--2-->
+				</div><!--2-->
     			
-        <div class="text-center p-2" style=" width: 100%; border-radius: 10px;  margin-top: 40px;"><!--3-->
-          <a class="linkclass" href="./index.html"><span class="linkclass">Home</span></a><br><br>
-    			<a class="active linkclass" href="./firstGrade.html"><span class="linkclass">First Grade</span></a><br><br>
+        		<div class="text-center p-2" style=" width: 100%; border-radius: 10px;  margin-top: 40px;"><!--3-->
+          			<a class="linkclass" href="./index.html"><span class="linkclass">Home</span></a><br><br>
+    				<a class="active linkclass" href="./firstGrade.html"><span class="linkclass">First Grade</span></a><br><br>
 					<a class =  "linkclass" href="./secondGrade.html"><span class="linkclass"> Second Grade </span></a><br><br>
 					<a class =  "linkclass" href="./thirdGrade.html" ><span class="linkclass"> Third Grade </span></a><br><br>
-					<a  class =  "linkclass" href="./fourthGrade.html" ><span class="linkclass"> Fourth Grade </span></a> <br><br> 
-					<a class =  "linkclass" href="./fifthGrade.html"><span class="linkclass"> Fifth Grade </span></a><br><br>
-    		</div><!--3-->
-    			
-      
-      
-        </div><!--4-->
+					<!--<a  class =  "linkclass" href="./fourthGrade.html" ><span class="linkclass"> Fourth Grade </span></a> <br><br> 
+					<a class =  "linkclass" href="./fifthGrade.html"><span class="linkclass"> Fifth Grade </span></a><br><br>-->
+    			</div><!--3-->
+        	</div><!--4-->
 
-			  <div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(248, 244, 244, 0.993); background: url(https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); background-size: 100%; backdrop-filter: grayscale(0.5) opacity(0.8)"><!--5-->
-				<div class = "m-4" style="align-self: center;">
+			<div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(248, 244, 244, 0.993); background: url(https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); background-size: 100%; backdrop-filter: grayscale(0.5) opacity(0.8)"><!--5-->
+				<div class = "float-right"><!--9-->
+					<div class="dropdown float-right"><!--10-->
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style = "color: rgb(92, 87, 87);">Contact Us</button>
+						<ul class="dropdown-menu float-right">
+						<li><a href="#">Phone: 757 334 1815</i></a></li>
+						<li><a href="mailto:monicadeshmukh99@gmail.com">Email</a></li>
+						<li><a href="http://www.linkedin.com/in/monica-deshmukh">LinkedIn</a></li>
+						</ul>
+					</div><!--10-->
+				</div><!--9-->
+
+				<div class = "m-4" style="align-self: center;"><!--11-->
 					<h4 class="headings">Today's Challenge!</h4>
-					<h3 class="headings"> Count the beads! </h3>
-					<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS18HZssCAwimFco1tIPeulqbpiqDXCuKyngw&usqp=CAU"/></p><br>
+					<h3 class="headings"> Count the circles! </h3>
+					<div id = "beadBox" style="display:inline;">
+					</div>
+					<!--<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS18HZssCAwimFco1tIPeulqbpiqDXCuKyngw&usqp=CAU"/></p><br>-->
 					<form id="problem">
 						<label for="answer">What do you think?</label>
 						<input type="text" id="answer"><br><br>
-						<input type="button" value="Check your answer" onclick="firstGradeProblem()"><br><br>
+						<input type="button" value="Check your answer" onclick="firstGradeProblem()">
+						<input type="button" value="Try again" onclick="location.reload();"><br><br>
 					</form>
-					<div><p id = "result" ></p></div>
-				</div>
-       		 </div><!--5-->
+					<div id="displayResult"  align-items="center">
+						<p id = "result" ></p>
+						<img id = "hifi" src="./img/hifi1.gif" style="width: 100px; height:100px; display:none;">
+					</div>
+					<!--<div><p id = "result" ></p></div>-->
+				</div><!--11-->
+       		</div><!--5-->
 		</div><!--6-->
 	</div><!--7-->
 
@@ -126,6 +142,19 @@
     <!-- footer of page begins here -->
 	<script type="text/javascript" src="./js/footer-functions.js"></script>
 	<script type="text/javascript" src="./js/firstGrade.js"></script>
+	<script>
+		window.onload = function() { 
+			//var cnt = document.getElementById("beadBox").childElementCount;
+			var numberOfBeads = parseInt(Math.random() * 10);
+			//console.log(numberOfBeads);
+			for (var cnt = 0; cnt < numberOfBeads; cnt++) {
+				var para = document.createElement("P");                       // Create a <p> node
+				para.setAttribute("class", "bead");
+				document.getElementById("beadBox").appendChild(para);    
+			}
+			document.getElementById("answer").focus(); 
+        } 
+	</script>
   </footer> <!-- footer of page ends here -->
   <!-- ====================================================== -->
   <!-- ====================================================== -->
