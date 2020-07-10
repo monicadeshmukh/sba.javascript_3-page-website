@@ -8,7 +8,7 @@ https://monicadeshmukh.github.io/sba.javascript_3-page-website/.
 
 https://github.com/monicadeshmukh/sba.javascript_3-page-website/blob/master/img/indexPage.jpg
 
-
+https://github.com/monicadeshmukh/sba.javascript_3-page-website/blob/master/img/firstGradePage.jpg
 
 
 
